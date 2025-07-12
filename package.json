@@ -1,0 +1,60 @@
+{
+  "name": "@balancer-labs/v2-monorepo",
+  "private": true,
+  "description": "Balancer v2 Monorepo",
+  "license": "GPL-3.0-only",
+  "homepage": "https://github.com/balancer-labs/balancer-v2-monorepo#readme",
+  "repository": "git@github.com:balancer-labs/balancer-v2-monorepo.git",
+  "bugs": {
+    "url": "https://github.com/balancer-labs/balancer-v2-monorepo/issues"
+  },
+  "engines": {
+    "node": ">=18 <18.16"
+  },
+  "packageManager": "yarn@4.0.0-rc.42",
+  "contributors": [
+    "Daniel Fernandez <daniel@balancer.finance>",
+    "Facu Spagnuolo <facu@balancer.finance>",
+    "Fernando Martinelli <fernando@balancer.finance>",
+    "Greg Taschuk <greg@balancer.finance>",
+    "Jeffrey Bennett <jeff@balancer.finance>",
+    "John Grant <john@balancer.finance>",
+    "Mike McDonald <mike@balancer.finance>",
+    "Nicolás Venturo <nico@balancer.finance>",
+    "Tom French <tom@balancer.finance>",
+    "Igor Yalovoy <igor@balancerlabs.dev>"
+  ],
+  "scripts": {
+    "build": "yarn workspaces foreach --parallel --verbose run build",
+    "lint": "NODE_NO_WARNINGS=1 yarn workspaces foreach --parallel --verbose run lint",
+    "test": "yarn workspaces foreach --parallel --verbose run test"
+  },
+  "workspaces": [
+    "pkg/*",
+    "pvt/*"
+  ],
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.9",
+    "@nomicfoundation/hardhat-ethers": "^3.0.9",
+    "@nomicfoundation/hardhat-ignition-ethers": "^0.15.13",
+    "@nomicfoundation/hardhat-toolbox": "^6.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.14",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/node": "^24.0.12",
+    "dotenv": "^17.2.0",
+    "hardhat": "^2.25.0",
+    "hardhat-dependency-compiler": "^1.2.1",
+    "hardhat-deploy": "^1.0.4",
+    "hardhat-deploy-ethers": "^0.4.2",
+    "hardhat-gas-reporter": "^2.3.0",
+    "solidity-coverage": "^0.8.16",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-ignition": "^0.15.12",
+    "@nomicfoundation/ignition-core": "^0.15.12"
+  }
+}
