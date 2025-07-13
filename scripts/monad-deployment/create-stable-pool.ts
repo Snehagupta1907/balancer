@@ -6,8 +6,8 @@ async function main() {
   console.log('Creating stable pool with account:', deployer.address);
 
   // Replace these with your deployed contract addresses from deploy-stable-pool.ts
-  const FACTORY_ADDRESS = '0x...'; // Your deployed ComposableStablePoolFactory address
-  const VAULT_ADDRESS = '0x...';   // Your deployed Vault address
+  const FACTORY_ADDRESS = '0x584A90E3d3Fd90962C00d05C8f37300E9b4D97B3'; // Your deployed ComposableStablePoolFactory address
+  const VAULT_ADDRESS = '0x598265DC45aDA61227153a96A3d20Ea0Fa198B0E';   // Your deployed Vault address
 
   // Example Monad token addresses (replace with actual addresses)
   const MONAD_TOKENS = {

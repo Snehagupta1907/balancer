@@ -6,16 +6,16 @@ async function main() {
   console.log('Creating test stable pool with mock tokens');
   console.log('Account:', deployer.address);
 
-  // Replace these with your deployed addresses from deploy-core-only.ts
-  const FACTORY_ADDRESS = '0x...'; // Your deployed ComposableStablePoolFactory address
-  const VAULT_ADDRESS = '0x...';   // Your deployed Vault address
+  // Deployed addresses from deploy-core-only.ts
+  const FACTORY_ADDRESS = '0x584A90E3d3Fd90962C00d05C8f37300E9b4D97B3'; // ComposableStablePoolFactory
+  const VAULT_ADDRESS = '0x598265DC45aDA61227153a96A3d20Ea0Fa198B0E';   // Vault
 
   // Mock token addresses from deploy-core-only.ts
   const MOCK_TOKENS = {
-    shMON: '0x...', // Mock shMON address from deployment
-    sMON: '0x...',  // Mock sMON address from deployment
-    gMON: '0x...',  // Mock gMON address from deployment
-    aprMON: '0x...', // Mock aprMON address from deployment
+    shMON: '0x747ee810C8477F2e85A88ea66A5e03C9494A2cfc', // Mock shMON
+    sMON: '0xeAB8785e3D2E48E5b24689D7e98c88f91Fd8170D',  // Mock sMON
+    gMON: '0xE04fa707fAcAF0441E5983aCDCB89FfCC457234b',  // Mock gMON
+    aprMON: '0x75714FE9Fc17a84097e6194b3B024716AD5a2bE7', // Mock aprMON
   };
 
   try {
